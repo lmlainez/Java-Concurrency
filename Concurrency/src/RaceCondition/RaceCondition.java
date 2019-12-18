@@ -1,7 +1,13 @@
 package RaceCondition;
 
 /**
- * Created by developer on 18/12/19.
+ * Race condition in a multi-threaded environment when more than one thread
+ * try to access a shared resource (modify, write) at the same time. Multiple threads will hold a value, the value will
+ * be modified by another thread in the meantime and, when the initial thread changes the value of the resource, it will
+ * ignore the previous result of the other thread, leading to unexpected errors.
+ * The sections in which more than one thread try to access and modify a shared resource is called 'critical section' and
+ * needs to be accessed by up to one thread at a time. We do that by using locks (synchronized(lock)) or marking the
+ * entire method as synchronized.
  */
 public class RaceCondition {
 
