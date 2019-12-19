@@ -9,6 +9,9 @@ package DataRace;
  * the same time, and re-arrangement won't happen.
  * Using volatile in a shared variable, we make sure that all instructions before the access to the volatile variable are
  * executed before and all instructions after are also executed after.
+ * Volatile solves DataRace in all cases.
+ * As a rule of thumb, every variable that is updated by more than one thread has to be inside a synchronized block or declared
+ * as volatile.
  */
 public class DataRace {
     public static void main(String[] args) {

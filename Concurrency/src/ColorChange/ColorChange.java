@@ -8,6 +8,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * We want to change the color of the flowers from Shade of gray to violet.
+ * the first approach is to do so with just 1 thread. In order to increment the throughput, we will divide the image
+ * in as many threads we want to use, and make them all work at the same time.
+ * As all threads will work in different parts of the image, we don't need to coordinate them
+ */
 public class ColorChange {
 
     public static final String SOURCE_FILE = "./resources/many-flowers.jpg";
