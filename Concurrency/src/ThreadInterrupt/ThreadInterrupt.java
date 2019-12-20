@@ -1,7 +1,7 @@
 package ThreadInterrupt;
 
 /**
- * Exercise that shows how er can interrupt a long ongoing thread.
+ * AtomicReference that shows how er can interrupt a long ongoing thread.
  * Once created and running, we will force it to be interrupted and then the InterruptedException will
  * be executed in the interrupted thread.
  */
